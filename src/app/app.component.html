@@ -1,0 +1,23 @@
+<div class="container-fluid">
+
+<div class="row" style="margin-top:100px;">
+  <div class="col-12">
+    <h3>Ajouter un user </h3>
+    <hr/>
+    <div class="form-group">
+      <input class="form-control" type="text" [(ngModel)]="user">
+    </div>
+    <button class="btn btn-primary" (click)="addUser()"> + </button>
+  </div>
+</div>
+<div class="row" style="margin-top:50px;">
+  <div class="col-12">
+    <h3 class="col-12"> Users : </h3>
+    <hr/>
+    <ul class="list-group col-12">
+      <li class="list-group-item" *ngFor="let user of users">{{ user.name }}</li>
+    </ul>
+  </div>
+</div>
+
+</div>
